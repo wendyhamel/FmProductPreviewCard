@@ -8,29 +8,54 @@
   
   <title>Frontend Mentor | Product preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;1,700&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind play cdn and local tailwind config file -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="src/tailwind.config.js"></script>
+
+  <!-- Alpine.js  -->
+  <!-- Alpine.js core  -->
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
+<main class="antialiased bg-primary-cream min-h-screen px-4 py-8 grid place-items-center">
+  <section class="bg-white text-neutral-gray-blue flex flex-col sm:flex-row rounded-lg overflow-hidden">
+    <div>
+        <picture>
+          <source srcset="images/image-product-desktop.jpg" media="(min-width: 640px)">
+          <img class="object-cover" src="images/image-product-mobile.jpg" alt="image of the perfume">
+        </picture>
+    </div>
+    <div class="p-6">
+      <p class="uppercase text-xs tracking-[0.3rem] mb-3">Perfume</p>
+      <h1 class="font-serif text-3xl tracking-wide leading-none text-neutral-blue mb-5">Gabrielle Essence Eau De Parfum</h1>
 
-  Preview
+      <p class="text-sm leading-normal mb-6">
+        A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        Perfumer-Creator for the House of CHANEL.
+      </p>
 
-  Gabrielle Essence Eau De Parfum
+      <div class="flex gap-4 items-center mb-5">
+        <p class="font-serif text-3xl text-primary-cyan">$149.99</p>
+        <p class="line-through text-xs">$169.99</p>
+      </div>
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
+      <button class="w-full bg-primary-cyan rounded-lg flex gap-2 items-center justify-center p-3.5 text-neutral-white">
+        <img src="images/icon-cart.svg" alt="icon-cart">
+        <span class="text-sm font-bold">Add to Cart</span>
+      </button>
+    </div>
+  </section>
 
-  $149.99
-  $169.99
+</main>
 
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<footer class="fixed bottom-0 inset-x-0 text-center text-xs text-neutral-blue bg-white/80 py-1 opacity-0 translate-y-2 hover:opacity-100 hover:translate-y-0 transform transition ease-in-out duration-150">
+  Challenge by <a class="hover:underline" href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa" target="_blank">Frontend Mentor</a>.
+  Coded by <a class="hover:underline" href="https://www.frontendmentor.io/profile/wendyhamel" target="_blank">Wendy Hamel</a>.
+</footer>
 </body>
 </html>
