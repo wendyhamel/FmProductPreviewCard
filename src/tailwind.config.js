@@ -8,6 +8,7 @@ tailwind.config = {
 			colors: {
 				'primary': {
 					'cyan': 'hsl(158, 36%, 37%)',
+					'cyan-dark': 'hsl(158, 36%, 22%)',
 					'cream': 'hsl(30, 38%, 92%)',
 				},
 				'neutral': {

@@ -23,28 +23,28 @@
 </head>
 <body>
 <main class="antialiased bg-primary-cream min-h-screen px-4 py-8 grid place-items-center">
-  <section class="bg-white text-neutral-gray-blue flex flex-col sm:flex-row rounded-lg overflow-hidden">
-    <div>
+  <section class="bg-white text-neutral-gray-blue rounded-lg overflow-hidden sm:grid sm:grid-cols-2 sm:max-w-[600px]">
+    <div class="">
         <picture>
           <source srcset="images/image-product-desktop.jpg" media="(min-width: 640px)">
           <img class="object-cover" src="images/image-product-mobile.jpg" alt="image of the perfume">
         </picture>
     </div>
-    <div class="p-6">
-      <p class="uppercase text-xs tracking-[0.3rem] mb-3">Perfume</p>
-      <h1 class="font-serif text-3xl tracking-wide leading-none text-neutral-blue mb-5">Gabrielle Essence Eau De Parfum</h1>
+    <div class="p-6 sm:p-8">
+      <p class="uppercase text-xs tracking-[0.3rem] mb-3 sm:mb-6">Perfume</p>
+      <h1 class="font-serif text-3xl tracking-wide leading-none text-neutral-blue mb-5 sm:mb-6">Gabrielle Essence Eau De Parfum</h1>
 
-      <p class="text-sm leading-normal mb-6">
+      <p class="text-sm leading-normal mb-6 sm:leading-relaxed sm:mb-8">
         A floral, solar and voluptuous interpretation composed by Olivier Polge,
         Perfumer-Creator for the House of CHANEL.
       </p>
 
-      <div class="flex gap-4 items-center mb-5">
+      <div class="flex gap-4 items-center mb-5 sm:mb-8">
         <p class="font-serif text-3xl text-primary-cyan">$149.99</p>
         <p class="line-through text-xs">$169.99</p>
       </div>
 
-      <button class="w-full bg-primary-cyan rounded-lg flex gap-2 items-center justify-center p-3.5 text-neutral-white">
+      <button class="w-full bg-primary-cyan rounded-lg flex gap-2 items-center justify-center p-3.5 text-neutral-white hover:bg-primary-cyan-dark transition ease-in-out duration-150">
         <img src="images/icon-cart.svg" alt="icon-cart">
         <span class="text-sm font-bold">Add to Cart</span>
       </button>
